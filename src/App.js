@@ -41,10 +41,10 @@ const App = () => {
       <div className="toolbar">
         <UndoRedoManager undo={undo} redo={redo} canUndo={canUndo} canRedo={canRedo} />
         <div className="button-group">
-          <Button variant="outline-light" className="custom-button" onClick={handleAddNode}>
+          <Button variant="outline-light" className="custom-button btn-sm" onClick={handleAddNode}>
             Add Node
           </Button>
-          <Button variant="outline-light" className="custom-button" onClick={() => exportJSON(nodes)}>
+          <Button variant="outline-light" className="custom-button btn-sm" onClick={() => exportJSON(nodes)}>
             <FaFileExport /> Export JSON
           </Button>
           <input
@@ -58,7 +58,7 @@ const App = () => {
             id="importFile"
           />
           <label htmlFor="importFile">
-            <Button variant="outline-light" className="custom-button">
+            <Button variant="outline-light" className="custom-button btn-sm">
               <FaFileImport /> Import JSON
             </Button>
           </label>

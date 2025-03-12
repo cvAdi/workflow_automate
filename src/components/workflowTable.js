@@ -10,6 +10,7 @@ const WorkflowTable = ({ nodes, setNodes, setSelectedNode }) => {
   return (
     <div className="workflow-summary">
       <h4>📊 Workflow Summary</h4>
+      <div className="table-responsive">
       <Table striped bordered hover className="summary-table">
         <thead>
           <tr>
@@ -42,6 +43,7 @@ const WorkflowTable = ({ nodes, setNodes, setSelectedNode }) => {
           )}
         </tbody>
       </Table>
+      </div>
     </div>
   );
 };
